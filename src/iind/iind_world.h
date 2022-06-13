@@ -29,8 +29,11 @@ MISC. DEFINITIONS
 #define IIND_PI 3.14159
 
 #define IIND_WORLD_PLAYER_ENTITY 0
+#define IIND_WORLD_ENTITY_MOVEMENT_HEALTH_DRAIN_RATE 0.01
 
+#define IIND_WORLD_ENTITY_MAX_HEALTH 100
 #define IIND_DEFAULT_WORLD_ENTITY_MOVEMENT_SPEED 0.015
+
 #define IIND_DEFAULT_WORLD_DOOR_FUNC_RADIUS 0.5
 
 /*
@@ -54,6 +57,7 @@ FUNC TYPE ID DEFINITIONS
 #define IIND_WORLD_DIALOGUE_FUNC 3
 #define IIND_WORLD_GATE_FUNC 4
 #define IIND_WORLD_INVERTER_FUNC 5
+#define IIND_WORLD_CHARGER_FUNC 6
 
 /*
 =======================
@@ -111,7 +115,7 @@ IINDWorldTile;
 
 typedef struct IINDWorldEntity
 {
-	float x, y, speed, angle;
+	float x, y, speed, angle, health;
 	int sdl_texture_id, anim_col, anim_row;
 	bool collision;
 }
