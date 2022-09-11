@@ -23,7 +23,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 #define IIND_DEFAULT_COUNTER_VAL 0
 #define IIND_DEFAULT_FPS 64
 #define IIND_DEFAULT_WORLD_TIME_SCALE 128
-#define IIND_DEFAULT_RENDER_SCALE 96
+#define IIND_DEFAULT_RENDER_SCALE 80
 #define IIND_DEFAULT_ASPECT_RATIO 16 / 9
 #define IIND_DEFAULT_ANIM_SPEED 28
 #define IIND_DEFAULT_WORLD_ID 0
